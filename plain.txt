@@ -1,0 +1,21 @@
+Functional components
+Do not go similiar methods and hooks that replicate class components
+There are no life cycles when we come to functional components
+Here we use the concept of functions and side effects
+
+What are SIDE EFFECTS?
+Pure functions and impure functions
+
+A pure function return the exact same thing no matter how many times it is called
+const pureFunction = (a,b){
+  return a+b
+};
+
+Impure functions
+let c = 20;
+const impureFunction = function(a,b){
+  return a+b+c;
+};
+
+Using hooks, first you need to import the hooks
+import {useState} from 'react';
